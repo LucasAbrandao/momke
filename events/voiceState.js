@@ -1,9 +1,8 @@
-const { Events } = require('discord.js');
+const { Events,VoiceState } = require('discord.js');
 
 module.exports = {
 	name: Events.VoiceStateUpdate,
-	once: false,
-	execute(client) {
+	async execute(client) {
 		console.log(`testa ai`);
 	},
 };
